@@ -1,0 +1,62 @@
+package com.techpalle.sample;
+
+public class Encapsule
+{
+
+	public static void main(String[] args) 
+	{	
+	Account ac=new Account();
+	ac.setAcc_no(90005369500L);
+	ac.setName("Rakesh_kumar");
+	ac.setEmail("rakeshkumar@gmail.com");
+	ac.setAmount(12000.00F);
+	System.out.println("AccountNumber: " + ac.getAcc_no());
+	System.out.println("AccountHolderName: " + ac.getName());
+	System.out.println("AccountGmail: " + ac.getEmail());
+	System.out.println("AccountBalAmount: " + ac.getAmount());
+	System.out.println("****************************************");
+	}
+}		
+class Account 
+{   
+	private long acc_no;  
+	private String name;
+	private String email;  
+	private float amount; 
+			
+	public long getAcc_no() 
+	{  
+	   return acc_no;  
+	}  
+	public void setAcc_no(long acc_no) 
+	{  
+	  this.acc_no = acc_no;  
+	}  
+	public String getName()
+	{  
+	  return name;  
+	}  
+	public void setName(String name) 
+	{  
+	  this.name = name;  
+        }  
+	public String getEmail() 
+	{  
+	  return email;  
+	}  
+	public void setEmail(String email) 
+	{  
+         this.email = email;  
+	}  
+	public float getAmount() 
+	{  
+	return amount;  
+	}  
+	public void setAmount(float amount)
+	{  
+	this.amount = amount;  
+	}  			  
+} 
+
+ 
+	
